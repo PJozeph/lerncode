@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@lerncode-workspace/lib/shared": ["lib/shared/src/index.ts"],
+      "@lerncode-workspace/shared": ["shared/src/index.ts"],
+      "@lerncode-workspace/shared2": ["shared2/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
