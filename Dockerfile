@@ -9,7 +9,7 @@ RUN npm install -g nx
 
 COPY . .
 
-RUN nx build ui --prod
+# RUN nx build ui --prod
 RUN nx build server --prod
 
 
