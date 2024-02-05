@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
-import { CreateDto } from '@lerncode-workspace/lib/shared';
+import { CreateTaskDto } from '@lerncode-workspace/lib/shared';
 
 @Component({
   standalone: true,
@@ -13,7 +13,9 @@ import { CreateDto } from '@lerncode-workspace/lib/shared';
 export class AppComponent implements OnInit {
   title = 'ui';
   ngOnInit(): void {
-    const dto: CreateDto = { name: 'test' };
+    const dto: CreateTaskDto = new CreateTaskDto();
+    dto.title = 'title';
+    dto.description = 'description';
     console.log(dto);
   }
 }
