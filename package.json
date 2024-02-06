@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve ui & nx serve service"
+    "start": "nx serve ui & nx serve service",
+    "start2": "ng serve"
+
   },
   "private": true,
   

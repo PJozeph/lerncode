@@ -3,5 +3,5 @@ steps:
     entrypoint: 'npm'
     args: ['install']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '--tag=gcr.io/$PROJECT_ID/faq-chat-ai-service', '.']
-images: ['gcr.io/$PROJECT_ID/faq-chat-ai-service']
+    args: ['build', '--tag=gcr.io/$PROJECT_ID/foo', '.']
+images: ['gcr.io/$PROJECT_ID/foo']
